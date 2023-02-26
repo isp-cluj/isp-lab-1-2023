@@ -1,52 +1,52 @@
-# Exemplu proiect template pentru laboratoarele ISP
+# # Sample project template for ISP (SE) labs
 
-Dependentele proiectlui:
+Project dependencies:
 - Maven 3 
-- Java 1.8 
+- Java 1.8 (11 or 17)
 
-Pentru a rula proiectul se va executa comanda mvn din radacina proiectului unde sa gaseste fisierul pom.xml.
+In order to run the project, execute the following command from the root directory (pom.xml should be in this path).
 
-La rulare se va apela metoda main ce face parte din clasa specificata in fisierul pom.xml in proprietate 'mainClass':
+At run time, the main method of the class specified in the pom.xml file through the 'mainClass' property will be called:
 
     <mainClass>Example</mainClass>
 
-Pentru a transmite argumente din linia de comanda atunci cand se utilizeaza maven se va modifica elementul 'commandlineArgs' in fisierl pom.xml conform exemplului:
+To pass arguments in the command line when using maven, the element 'commandlineArgs' in the pom.xml file will be modified according to the following example:
 
     <commandlineArgs>-jar ${project.build.directory}/${project.build.finalName}-${shadedClassifierName}.jar arg1 arg2</commandlineArgs>
 
-## Rularea testelor
+## Running the tests
 
-Pentru a rula toate testele JUnit se va rula comanda:
+To run the unit tests, execute the following command: 
 
     mvn test
 
-## Rularea programului 
+## Running the application 
 
     mvn compile exec:java 
 
-## Rulare default
+## Default running
 
-Pentru a executa un ciclu complet de compilare, testare si rulare sa executa comanda:
+To perform a complete compile, test and run cycle execute the command:
 
     mvn
 
-Prin comanda 'mvn' maven va rula 'default maven goals' setate in fisierul pom.xml, si anume:
+Through the 'mvn' command, maven will run the 'default maven goals' set in the pom.xml file, namely:
 
     <defaultGoal>clean compile package exec:java</defaultGoal> 
 
-## Rulare alternativa utilizand mvn wrapper 
+## Alternate run using mvn wrapper
 
-Alternativ, comenzile anterioare pot fi rulate utilizand mvn wrapper (https://github.com/takari/maven-wrapper) utilizand comanda mvnw in cazul in care maven nu este instalat. Exemplu:
+Alternatively, the previous commands can be run using the mvn wrapper (https://github.com/takari/maven-wrapper); the 'mvnw' command can be used if maven is not installed. Example:
 
     mvnw test 
     
-## Generarea documentatiei javadoc
+## Generating the javadoc documentation
 
-Pentru a genera documentatia proiectului se va executa comanda:
+To generate the project documentation, the next command will be executed:
 
     mvn javadoc:javadoc
    
-## Uneltele laborator ISP
+## The ISP (SE) laboratory tools
 
 ![GitHub Logo](docs/ClassDiagram1.jpg)
      
