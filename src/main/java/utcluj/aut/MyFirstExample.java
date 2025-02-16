@@ -26,7 +26,4 @@ public class MyFirstExample {
         return a * b;
     }
 
-
-
-
 }

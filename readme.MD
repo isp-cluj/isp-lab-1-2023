@@ -34,6 +34,7 @@ While you can write and compile Java programs manually, using a build management
 ## General Structure of a Maven Project
 A typical Maven project has the following directory structure:
 
+```
 my-maven-project/
 ├── src/
 │ ├── main/
@@ -44,7 +45,7 @@ my-maven-project/
 │ └── resources/ # Contains test-specific resources
 ├── target/ # Contains compiled classes, JAR files, and build outputs
 └── pom.xml # The Project Object Model (POM) file
-
+```
 
 - **`src/main/java`**: This is where your main application code resides.
 - **`src/test/java`**: This is where your test code resides.
