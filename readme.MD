@@ -71,3 +71,19 @@ While Maven is widely used, there are other build management tools available for
    - Ant is often used in legacy projects or where fine-grained control over the build process is required.
 
 Choosing the right tool depends on your project's requirements, team preferences, and ecosystem. Maven remains a solid choice for most Java projects, but exploring alternatives like Gradle or Bazel can be beneficial for specific use cases.
+
+## Exercise
+
+### Exercises 1
+
+1. Load the project in your IDE.
+2. Run the class containing the `main` method.
+3. Run the provided tests.
+4. Add a new feature to the `main` class.
+5. Add a test to verify the new feature.
+6. Push all your changes to the remote repository using `git add`, `git commit`, and `git push` commands.
+7. Verify that your changes are reflected in the remote repository.
+8. Add a new class containing a `main` method and run it.
+9. push all your changes to the remote repository using `git add`, `git commit`, and `git push` commands.
+
+**NOTE:** As part of this laboratory is importan to become familiar with IDE (IntelliJ IDEA), Maven, and Git. You will use these tools throughout the semester to work on your projects and assignments. Understand the structure of a Maven project and how to run Java programs. 
