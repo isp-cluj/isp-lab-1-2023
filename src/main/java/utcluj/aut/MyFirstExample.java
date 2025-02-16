@@ -2,6 +2,10 @@ package utcluj.aut;
 
 import java.util.Scanner;
 
+/**
+ * MyFirstExample class is a simple class that demonstrates the usage of Java.
+ */
+
 public class MyFirstExample {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
