@@ -51,12 +51,6 @@ my-maven-project/
 - **`src/test/java`**: This is where your test code resides.
 - **`pom.xml`**: This file defines the project's dependencies, plugins, and build configuration.
 
-## IDEs and Maven Integration
-Most modern Integrated Development Environments (IDEs) like IntelliJ IDEA, Eclipse, and Visual Studio Code come with built-in support for Maven. This means you don’t need to install Maven separately. These IDEs provide integrated plugins that allow you to:
-- Create and manage Maven projects.
-- Automatically download dependencies.
-- Run Maven commands (e.g., `mvn clean`, `mvn install`) directly from the IDE.
-
 ## Alternative Build Management Tools
 While Maven is widely used, there are other build management tools available for Java projects, each with its own strengths and use cases. Here are a few popular alternatives:
 
